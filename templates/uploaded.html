@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <div class="jumbotron text-center">
+    <p class="lead">Automation of CSV file with Perplexity AI</p>
+    <h4>Uploaded {{ filename }}.csv & {{ filename }}.pdf</h4>
+    <a href="/" class="btn btn-primary btn-lg">Go Home</a>
+    <button class="btn btn-success btn-lg" onclick='process_file("{{ filename }}")''>Process</button>
+  </div>
+{% endblock %}
